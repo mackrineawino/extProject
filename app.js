@@ -14,5 +14,5 @@ Ext.application({
     ],
 
     // The name of the initial view to create.
-    mainView: 'CoolStuffExt.view.main.Main'
+    //mainView: 'CoolStuffExt.view.main.Main'
 });
