@@ -1,4 +1,4 @@
-Ext.define('CoolSfullExt.view.header.Header', {
+Ext.define('CoolStuffExt.view.header.Header', {
     extend: 'Ext.toolbar.Toolbar',
     xtype: 'appheader', 
     ui: 'footer', 

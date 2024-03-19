@@ -1,4 +1,4 @@
-Ext.define('CoolSfullExt.view.main.MainPanel', {
+Ext.define('CoolStuffExt.view.main.MainPanel', {
     extend:'Ext.tab.Panel',
     xtype:'mainpanel',
     items: [{

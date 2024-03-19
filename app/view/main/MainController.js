@@ -7,13 +7,26 @@ Ext.define('CoolStuffExt.view.main.MainController', {
 
     alias: 'controller.main',
 
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+
+    onLogout: function () {
+        localStorage.removeItem('MyAppAuthToken');
+        this.getView().destroy();
+        Ext.widget('loginwindow');
+        Ext.util.History.add('login');
     },
 
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
+    routes: {
+        'home': 'onHomeRoute',
+    },
+
+    onHomeRoute: function () {
+        let mainPanel = this.getMainPanel();
+        if (mainPanel) {
+            mainPanel.setActiveTab(0)
         }
-    }
+    },
+
+    getMainPanel: function () {
+        return Ext.ComponentQuery.query('mainpanel')[0];
+    },
 });

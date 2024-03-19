@@ -1,10 +1,11 @@
-Ext.define('CoolSfullExt.view.login.Login', {
+Ext.define('CoolStuffExt.view.login.Login', {
     extend: 'Ext.window.Window',
     xtype: 'loginwindow',
+  
     requires: [
-        'CoolSfullExt.view.login.LoginController',
+        'CoolStuffExt.view.login.LoginController',
         'Ext.form.Panel',
-        'CoolSfullExt.util.Util'
+        'CoolStuffExt.util.Util'
     ],
 
     controller: 'login',
@@ -19,7 +20,7 @@ Ext.define('CoolSfullExt.view.login.Login', {
         xtype: 'form',
         reference: 'form',
         defaults: {
-            afterLabelTextTpl: CoolSfullExt.util.Util.required,
+            afterLabelTextTpl: CoolStuffExt.util.Util.required,
         }
         ,
         items: [{

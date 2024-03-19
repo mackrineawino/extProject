@@ -1,4 +1,4 @@
-Ext.define('CoolSfullExt.util.Util',{
+Ext.define('CoolStuffExt.util.Util',{
     statics:{
     logInfo: function(message){
         console.log(message)
@@ -45,7 +45,7 @@ Ext.define('CoolSfullExt.util.Util',{
     handleFormFailure: function (action) {
         var me = this,
             result =
-            CoolSfullExt.util.Util.decodeJSON(action.response.responseText);
+            CoolStuffExt.util.Util.decodeJSON(action.response.responseText);
         switch (action.failureType) {
             case Ext.form.action.Action.CLIENT_INVALID:
                 me.showErrorMsg('Form fields may not be submitted with invalid values'); //#1

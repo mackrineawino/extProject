@@ -1,4 +1,4 @@
-Ext.define('CoolSfullExt.view.menu.MainMenu',{
+Ext.define('CoolStuffExt.view.menu.MainMenu',{
     extend: 'Ext.tree.Panel',
     xtype: 'mainmenu',
     itemId: 'mainmenu',

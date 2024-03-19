@@ -1,4 +1,4 @@
-Ext.define('CoolSfullExt.view.footer.Footer', {
+Ext.define('CoolStuffExt.view.footer.Footer', {
     extend: 'Ext.container.Container',
     xtype: 'appfooter',
     cls: 'app-footer',

@@ -1,4 +1,4 @@
-Ext.define('CoolSfullExt.store.Menu',{
+Ext.define('CoolStuffExt.store.Menu',{
     extend:'Ext.data.TreeStore',
     alias:'store.menu',
     root: {
